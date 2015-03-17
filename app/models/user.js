@@ -1,6 +1,6 @@
 import DS from 'ember-data';
 
-App.User = DS.Model.extend({
+export default DS.Model.extend({
   username: DS.attr('string'),
   email: DS.attr('string'),
   registerdAt: DS.attr('date', {defaultValue: new Date()}),
